@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { ButtonCustom } from "./ui/button-custom";
 import { Heart, Menu, X } from "lucide-react";
@@ -36,14 +35,12 @@ const Header = () => {
             <Link to="/" className="flex flex-col" onClick={closeMenu}>
               <h1 className="font-bold text-base md:text-xl text-white leading-tight">Marriage Mender GPT</h1>
               <p className="text-[9px] md:text-xs text-white/60 leading-tight mt-0.5">Presented by AiWebTools.Ai</p>
-              {/* Only display on desktop/tablet (md screens and above) */}
               <p className="hidden md:block text-xs text-white/90 leading-tight mt-1">
                 AI-Powered Relationship Mediator
               </p>
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               className="text-white p-2 mobile-tap-target"
@@ -54,7 +51,6 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <a
               href="https://chatgpt.com/g/g-0MogI8wIQ-marriage-mender-gpt"
@@ -97,7 +93,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile menu - improved with slide animation and larger touch targets */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-black/95 backdrop-blur-lg z-40 pt-16 animate-fade-in">
           <div className="px-4 py-6 flex flex-col space-y-6">
@@ -105,7 +100,7 @@ const Header = () => {
               href="https://chatgpt.com/g/g-0MogI8wIQ-marriage-mender-gpt"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-white/5"
+              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-rustic-muted"
               onClick={closeMenu}
             >
               Try Marriage Mender GPT
@@ -114,14 +109,14 @@ const Header = () => {
               href="https://www.aiwebtools.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-white/5"
+              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-rustic-muted"
               onClick={closeMenu}
             >
               More AI Tools
             </a>
             <a
               href="#faq"
-              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-white/5"
+              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-rustic-muted"
               onClick={() => {
                 closeMenu();
                 document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
@@ -131,7 +126,7 @@ const Header = () => {
             </a>
             <a
               href="#disclaimer"
-              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-white/5"
+              className="text-white hover:text-rustic-accent mobile-tap-target flex items-center px-4 py-3 rounded-lg bg-rustic-muted"
               onClick={() => {
                 closeMenu();
                 document.getElementById("disclaimer")?.scrollIntoView({ behavior: "smooth" });
