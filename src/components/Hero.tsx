@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { ButtonCustom } from "./ui/button-custom";
 import { Heart, Sparkles, Users } from "lucide-react";
@@ -74,8 +75,6 @@ const Hero = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Marriage Mender GPT Introduction"
-                className="w-full h-full rounded-xl"
-                style={{ border: 'none' }}
               ></iframe>
             </div>
           </div>
