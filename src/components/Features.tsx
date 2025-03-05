@@ -1,8 +1,12 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Heart, Users, Handshake, Sparkles, MessageCircle, ShieldCheck } from "lucide-react";
 
 const Features = () => {
+  useEffect(() => {
+    console.log("Features component mounted");
+  }, []);
+
   const featureItems = [
     {
       icon: <Heart className="h-8 w-8 text-rustic-accent" />,
@@ -35,6 +39,8 @@ const Features = () => {
       description: "Tailors advice to your unique relationship dynamics and specific challenges."
     }
   ];
+
+  console.log("Rendering Features component with", featureItems.length, "items");
 
   return (
     <section className="relative section-padding" id="features">

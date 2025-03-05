@@ -14,10 +14,12 @@ import { Heart } from "lucide-react";
 const Index = () => {
   // Smooth scroll to section if URL contains hash
   useEffect(() => {
+    console.log("Index page mounted");
     if (window.location.hash) {
       const id = window.location.hash.substring(1);
       const element = document.getElementById(id);
       if (element) {
+        console.log(`Scrolling to element with id: ${id}`);
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
@@ -28,6 +30,7 @@ const Index = () => {
       <Header />
       
       <main>
+        {console.log("Rendering main content")}
         <Hero />
         <Features />
         <HowItWorks />
