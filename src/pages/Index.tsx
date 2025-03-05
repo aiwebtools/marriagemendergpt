@@ -2,6 +2,7 @@
 import React, { useEffect, lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 // Lazy load components to improve initial load time
 const Features = lazy(() => import("@/components/Features"));
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
