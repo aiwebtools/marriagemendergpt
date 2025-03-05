@@ -34,10 +34,10 @@ const Header = () => {
               <Heart className="h-5 w-5 md:h-6 md:w-6 text-rustic-accent animate-pulse" />
             </div>
             <Link to="/" className="flex flex-col" onClick={closeMenu}>
-              {/* Significantly improved spacing for mobile layout */}
               <h1 className="font-bold text-base md:text-xl text-white leading-tight">Marriage Mender GPT</h1>
               <p className="text-[9px] md:text-xs text-white/60 leading-tight mt-0.5">Presented by AiWebTools.Ai</p>
-              <p className="text-[9px] md:text-xs text-white/90 leading-tight mt-2 md:mt-1">
+              {/* Only display on desktop/tablet (md screens and above) */}
+              <p className="hidden md:block text-xs text-white/90 leading-tight mt-1">
                 AI-Powered Relationship Mediator
               </p>
             </Link>
