@@ -18,7 +18,17 @@ const Disclaimer = () => {
 
         <div className="max-w-4xl mx-auto glass-morph rounded-2xl p-6 md:p-10 animate-fade-in">
           <div className="prose prose-invert max-w-none">
-            <h3 className="text-xl font-semibold mb-4 text-white">Disclaimer for Marriage Mender GPT</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Educational Purpose Statement</h3>
+            
+            <p className="text-white/70 mb-4">
+              Marriage Mender is a virtual mediation service designed for educational and informational purposes, 
+              facilitating communication and understanding between couples facing relationship challenges. 
+              It is an experimental simulation that provides guidance and support but is not a replacement for 
+              professional counseling or human marriage therapy. Users acknowledge that Marriage Mender is not 
+              a licensed therapist and disclaims any liability for actions taken based on the information provided.
+            </p>
+            
+            <h3 className="text-xl font-semibold mt-6 mb-4 text-white">Disclaimer for Marriage Mender GPT</h3>
             
             <p className="text-white/70 mb-4">
               Marriage Mender GPT is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
