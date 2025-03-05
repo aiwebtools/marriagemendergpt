@@ -63,7 +63,7 @@ const Hero = () => {
                 </div>
               </div>
               <p className="text-sm text-white/70">
-                <span className="font-bold text-white">5,000+</span> couples already using Marriage Mender
+                <span className="font-bold text-white">1,000+</span> couples already using Marriage Mender
               </p>
             </div>
           </div>
