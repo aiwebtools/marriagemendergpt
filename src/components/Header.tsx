@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ButtonCustom } from "./ui/button-custom";
-import { Heart, Menu, X, Sparkles } from "lucide-react";
+import { Heart, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -85,14 +85,6 @@ const Header = () => {
               Get Started
             </ButtonCustom>
           </nav>
-        </div>
-        
-        {/* AI-Powered badge */}
-        <div className="flex justify-start mt-1">
-          <div className="bg-black/40 backdrop-blur-sm px-4 py-1.5 rounded-full inline-flex items-center border border-white/10 shadow-sm">
-            <Sparkles className="h-4 w-4 text-yellow-400 mr-2" />
-            <span className="text-sm font-medium text-white/90">AI-Powered Relationship Mediator</span>
-          </div>
         </div>
       </div>
 
