@@ -35,37 +35,37 @@ const HowItWorks = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 pointer-events-none"></div>
 
       <div className="container mx-auto relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-4">
-            <span className="text-sm font-medium text-white">Simple Process</span>
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16 animate-fade-in">
+          <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-3 md:mb-4">
+            <span className="text-xs md:text-sm font-medium text-white">Simple Process</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-6 gradient-text">
             How Marriage Mender Works
           </h2>
-          <p className="text-lg text-white/70">
+          <p className="text-sm md:text-lg text-white/70">
             Our easy four-step process helps you and your partner navigate challenges and rebuild connection with expert guidance.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {steps.map((step, index) => (
             <div 
               key={index} 
-              className="rounded-2xl overflow-hidden flex flex-col h-full border border-white/10 animate-fade-in"
+              className="rounded-xl md:rounded-2xl overflow-hidden flex flex-col h-full border border-white/10 animate-fade-in"
               style={{ animationDelay: `${0.1 + index * 0.1}s` }}
             >
-              <div className={`${step.image} aspect-[4/3] p-6 flex items-end`}>
-                <span className="text-4xl font-bold text-white/30">{step.number}</span>
+              <div className={`${step.image} aspect-[4/3] p-4 md:p-6 flex items-end`}>
+                <span className="text-3xl md:text-4xl font-bold text-white/30">{step.number}</span>
               </div>
-              <div className="bg-rustic-muted p-6 flex-grow">
-                <h3 className="text-xl font-bold mb-3 text-white">{step.title}</h3>
-                <p className="text-white/70">{step.description}</p>
+              <div className="bg-rustic-muted p-4 md:p-6 flex-grow">
+                <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3 text-white">{step.title}</h3>
+                <p className="text-xs md:text-base text-white/70">{step.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 md:mt-16 text-center">
           <ButtonCustom
             variant="accent"
             size="lg"
