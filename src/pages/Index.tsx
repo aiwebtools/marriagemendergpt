@@ -25,12 +25,16 @@ const Index = () => {
     }
   }, []);
 
+  // Log rendering for debugging
+  useEffect(() => {
+    console.log("Rendering main content");
+  }, []);
+
   return (
     <div className="min-h-screen bg-rustic-dark text-white overflow-hidden">
       <Header />
       
       <main>
-        {console.log("Rendering main content")}
         <Hero />
         <Features />
         <HowItWorks />
