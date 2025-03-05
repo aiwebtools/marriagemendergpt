@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Heart, Users, HandShake, Sparkles, MessageCircle, ShieldCheck } from "lucide-react";
+import { Heart, Users, Handshake, Sparkles, MessageCircle, ShieldCheck } from "lucide-react";
 
 const Features = () => {
   const featureItems = [
@@ -15,7 +15,7 @@ const Features = () => {
       description: "Provides a balanced, non-judgmental perspective that considers both partners' viewpoints."
     },
     {
-      icon: <HandShake className="h-8 w-8 text-rustic-accent" />,
+      icon: <Handshake className="h-8 w-8 text-rustic-accent" />,
       title: "Conflict Resolution",
       description: "Offers practical techniques to transform conflicts into opportunities for growth and understanding."
     },
