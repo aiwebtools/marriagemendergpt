@@ -34,8 +34,9 @@ const Header = () => {
               <Heart className="h-5 w-5 md:h-6 md:w-6 text-rustic-accent animate-pulse" />
             </div>
             <Link to="/" className="flex flex-col" onClick={closeMenu}>
-              <h1 className="font-bold text-lg md:text-xl text-white">Marriage Mender GPT</h1>
-              <p className="text-[10px] md:text-xs text-white/60">Presented by AiWebTools.Ai</p>
+              {/* Adjusted title layout for mobile */}
+              <h1 className="font-bold text-base md:text-xl text-white leading-tight">Marriage Mender GPT</h1>
+              <p className="text-[9px] md:text-xs text-white/60 leading-tight mt-0.5">Presented by AiWebTools.Ai</p>
             </Link>
           </div>
 
