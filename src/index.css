@@ -34,8 +34,9 @@
   }
   
   body {
-    @apply bg-rustic-dark text-foreground antialiased overflow-x-hidden;
+    @apply bg-rustic-dark text-foreground antialiased overflow-x-hidden touch-manipulation;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    -webkit-tap-highlight-color: transparent;
   }
 
   html {
@@ -78,11 +79,48 @@
   }
   
   .section-padding {
-    @apply py-20 px-4 md:px-8 lg:px-16;
+    @apply py-16 px-4 md:px-8 lg:px-16 md:py-20;
   }
   
   .transition-custom {
     @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Mobile optimization utilities */
+  .mobile-tap-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  /* Add smooth animations for content loading */
+  .animate-fade-in-slow {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
@@ -105,4 +143,16 @@
   height: 100%;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .video-container {
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .video-container iframe {
+    border-radius: 8px;
+  }
 }
