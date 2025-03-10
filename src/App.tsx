@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Helmet } from "react-helmet";
-import DisclaimerPopup from "./components/DisclaimerPopup";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +17,6 @@ const App = () => (
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="theme-color" content="#1a1a1a" />
       </Helmet>
-      <DisclaimerPopup />
       <Toaster />
       <Sonner />
       <BrowserRouter>
