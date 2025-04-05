@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="video-container glass-morph">
               <iframe
-                src="https://www.youtube.com/embed/4HPOthRjWR4?autoplay=1&mute=0&controls=1&origin=https://lovable.dev&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1&vq=hd1080"
+                src="https://www.youtube.com/embed/3HCv5_QldrU?autoplay=1&mute=0&controls=1&origin=https://lovable.dev&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1&vq=hd1080"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Marriage Mender GPT Introduction"
