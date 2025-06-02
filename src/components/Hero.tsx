@@ -74,25 +74,6 @@ const Hero = () => {
               Meet Phazz, your neutral, AI-powered marriage mediator designed to help couples resolve conflicts and rebuild connection.
             </p>
             
-            {/* Video Section - Positioned after the description */}
-            <div className="w-full max-w-4xl mx-auto mb-8 z-30 relative">
-              <div className="relative w-full">
-                <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
-                    title="Marriage Mender GPT Introduction"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                    style={{ 
-                      border: 'none',
-                      display: 'block'
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            
             <div className="flex flex-wrap gap-6 pt-6">
               <ButtonCustom
                 variant="accent"
@@ -113,6 +94,25 @@ const Hero = () => {
               >
                 <span>Learn How It Works</span>
               </ButtonCustom>
+            </div>
+
+            {/* Video Section - Positioned after the buttons */}
+            <div className="w-full max-w-4xl mx-auto mb-8 z-30 relative">
+              <div className="relative w-full">
+                <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
+                    title="Marriage Mender GPT Introduction"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                    style={{ 
+                      border: 'none',
+                      display: 'block'
+                    }}
+                  />
+                </div>
+              </div>
             </div>
             
             <div className="flex items-center space-x-8 pt-8">
