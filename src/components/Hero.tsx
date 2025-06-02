@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { ButtonCustom } from "./ui/button-custom";
 import { Heart, Sparkles, Users, Star } from "lucide-react";
@@ -64,7 +65,11 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Video Section - Positioned after the badge */}
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight gradient-text divine-text">
+              Restore Harmony in Your Relationship
+            </h1>
+            
+            {/* Video Section - Positioned after the main heading */}
             <div className="w-full max-w-4xl mx-auto mb-8 z-30 relative">
               <div className="relative w-full">
                 <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
@@ -82,10 +87,6 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight gradient-text divine-text">
-              Restore Harmony in Your Relationship
-            </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-xl leading-relaxed backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10 shadow-xl">
               Meet Phazz, your neutral, AI-powered marriage mediator designed to help couples resolve conflicts and rebuild connection.
