@@ -54,25 +54,6 @@ const Hero = () => {
         <Sparkles className="absolute bottom-40 right-1/4 h-4 w-4 text-orange-400 animate-divine-pulse" style={{ animationDelay: "2.5s" }} />
       </div>
       
-      {/* Video Section - Positioned at Top */}
-      <div className="w-full max-w-4xl mx-auto mb-12 z-30 relative">
-        <div className="relative w-full">
-          <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
-            <iframe
-              src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
-              title="Marriage Mender GPT Introduction"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="absolute inset-0 w-full h-full"
-              style={{ 
-                border: 'none',
-                display: 'block'
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      
       <div className="container mx-auto z-20 relative">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
           <div className="lg:w-full space-y-8 animate-fade-in-slow text-center lg:text-left">
@@ -80,6 +61,25 @@ const Hero = () => {
               <div className="flex items-center space-x-3">
                 <Sparkles className="h-5 w-5 text-rustic-accent animate-divine-pulse" />
                 <span className="text-sm font-semibold gradient-text">AI-Powered Relationship Mediator</span>
+              </div>
+            </div>
+            
+            {/* Video Section - Positioned after the badge */}
+            <div className="w-full max-w-4xl mx-auto mb-8 z-30 relative">
+              <div className="relative w-full">
+                <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
+                    title="Marriage Mender GPT Introduction"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                    style={{ 
+                      border: 'none',
+                      display: 'block'
+                    }}
+                  />
+                </div>
               </div>
             </div>
             
