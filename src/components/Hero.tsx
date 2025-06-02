@@ -115,15 +115,21 @@ const Hero = () => {
           </div>
           
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="video-container glass-morph relative">
+            <div className="relative w-full max-w-2xl mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-r from-rustic-accent/20 via-yellow-400/20 to-rustic-accent/20 rounded-3xl filter blur-xl animate-divine-pulse"></div>
-              <iframe
-                src="https://www.youtube.com/embed/3HCv5_QldrU?autoplay=1&mute=1&controls=1&origin=https://lovable.dev&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1&vq=hd1080"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Marriage Mender GPT Introduction"
-                className="relative z-10"
-              ></iframe>
+              <div className="relative aspect-video w-full bg-black/20 backdrop-blur-lg rounded-2xl border border-white/20 overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/3HCv5_QldrU?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&playsinline=1"
+                  title="Marriage Mender GPT Introduction"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full border-0"
+                  style={{ 
+                    minHeight: '315px',
+                    background: 'transparent'
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
