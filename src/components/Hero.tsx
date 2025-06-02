@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden section-padding pt-32">
+    <section ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden section-padding pt-16">
       {/* Divine Background Effects */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-rustic-accent/30 to-yellow-400/30 rounded-full filter blur-3xl animate-holy-float" style={{ animationDelay: "0s" }}></div>
@@ -54,9 +54,28 @@ const Hero = () => {
         <Sparkles className="absolute bottom-40 right-1/4 h-4 w-4 text-orange-400 animate-divine-pulse" style={{ animationDelay: "2.5s" }} />
       </div>
       
+      {/* Video Section - Positioned at Top */}
+      <div className="w-full max-w-4xl mx-auto mb-12 z-30 relative">
+        <div className="relative w-full">
+          <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
+            <iframe
+              src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
+              title="Marriage Mender GPT Introduction"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+              style={{ 
+                border: 'none',
+                display: 'block'
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      
       <div className="container mx-auto z-20 relative">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
-          <div className="lg:w-1/2 space-y-8 animate-fade-in-slow">
+          <div className="lg:w-full space-y-8 animate-fade-in-slow text-center lg:text-left">
             <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-white/10 to-rustic-accent/10 border border-rustic-accent/30 mb-6 backdrop-blur-lg shadow-lg divine-glow">
               <div className="flex items-center space-x-3">
                 <Sparkles className="h-5 w-5 text-rustic-accent animate-divine-pulse" />
@@ -110,25 +129,6 @@ const Hero = () => {
                 <span className="font-bold text-transparent bg-gradient-to-r from-white to-rustic-accent bg-clip-text text-xl">1,000+</span><br />
                 <span className="text-sm">couples already using Marriage Mender</span>
               </p>
-            </div>
-          </div>
-          
-          <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="relative w-full max-w-2xl mx-auto">
-              <div className="w-full h-0 pb-[56.25%] relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                <iframe
-                  src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1"
-                  title="Marriage Mender GPT Introduction"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full"
-                  style={{ 
-                    border: 'none',
-                    display: 'block',
-                    backgroundColor: '#000'
-                  }}
-                />
-              </div>
             </div>
           </div>
         </div>
