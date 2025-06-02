@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { ButtonCustom } from "./ui/button-custom";
 import { Heart, Sparkles, Users, Star } from "lucide-react";
@@ -116,17 +115,17 @@ const Hero = () => {
           
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="relative w-full max-w-2xl mx-auto">
-              <div className="absolute -inset-4 bg-gradient-to-r from-rustic-accent/20 via-yellow-400/20 to-rustic-accent/20 rounded-3xl filter blur-xl animate-divine-pulse"></div>
-              <div className="relative aspect-video w-full bg-black/20 backdrop-blur-lg rounded-2xl border border-white/20 overflow-hidden shadow-2xl">
+              <div className="w-full h-0 pb-[56.25%] relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <iframe
-                  src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+                  src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1"
                   title="Marriage Mender GPT Introduction"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="absolute inset-0 w-full h-full border-0"
+                  className="absolute top-0 left-0 w-full h-full"
                   style={{ 
-                    minHeight: '315px',
-                    background: 'transparent'
+                    border: 'none',
+                    display: 'block',
+                    backgroundColor: '#000'
                   }}
                 />
               </div>
