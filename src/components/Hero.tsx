@@ -118,7 +118,7 @@ const Hero = () => {
             <div className="video-container glass-morph relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-rustic-accent/20 via-yellow-400/20 to-rustic-accent/20 rounded-3xl filter blur-xl animate-divine-pulse"></div>
               <iframe
-                src="https://www.youtube.com/embed/3HCv5_QldrU?autoplay=1&mute=0&controls=1&origin=https://lovable.dev&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1&vq=hd1080"
+                src="https://www.youtube.com/embed/3HCv5_QldrU?autoplay=1&mute=1&controls=1&origin=https://lovable.dev&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1&vq=hd1080"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="Marriage Mender GPT Introduction"
