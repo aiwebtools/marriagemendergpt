@@ -1,5 +1,4 @@
 
-
 import React, { useEffect, useRef } from "react";
 import { ButtonCustom } from "./ui/button-custom";
 import { Heart, Sparkles, Users, Star } from "lucide-react";
@@ -62,7 +61,7 @@ const Hero = () => {
             <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-white/10 to-rustic-accent/10 border border-rustic-accent/30 mb-6 backdrop-blur-lg shadow-lg divine-glow">
               <div className="flex items-center space-x-3">
                 <Sparkles className="h-5 w-5 text-rustic-accent animate-divine-pulse" />
-                <span className="text-sm font-semibold gradient-text">AI-Powered Relationship Mediator</span>
+                <span className="text-sm font-semibold gradient-text">AI Web Tools | Professional AI-Powered Relationship Mediator</span>
               </div>
             </div>
             
@@ -70,8 +69,12 @@ const Hero = () => {
               Restore Harmony in Your Relationship
             </h1>
             
+            <h2 className="text-2xl md:text-3xl font-semibold text-transparent bg-gradient-to-r from-white via-rustic-accent to-yellow-400 bg-clip-text mb-4">
+              Marriage Mender GPT by AI Web Tools - #1 AI Tools for Couples
+            </h2>
+            
             <p className="text-xl md:text-2xl text-white/90 max-w-xl leading-relaxed backdrop-blur-sm bg-white/5 p-6 rounded-2xl border border-white/10 shadow-xl">
-              Meet Phazz, your neutral, AI-powered marriage mediator designed to help couples resolve conflicts and rebuild connection.
+              Meet Phazz, your neutral, AI-powered marriage mediator designed to help couples resolve conflicts and rebuild connection using advanced AI web tools technology.
             </p>
             
             <div className="flex flex-wrap gap-6 pt-6">
@@ -92,7 +95,7 @@ const Hero = () => {
                 className="px-8 py-4 text-lg backdrop-blur-lg bg-white/5 border-2 border-white/20 hover:border-rustic-accent/50 hover:bg-white/10 transform hover:scale-105 transition-all duration-300"
                 onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
               >
-                <span>Learn How It Works</span>
+                <span>Learn How AI Tools Work</span>
               </ButtonCustom>
             </div>
 
@@ -102,7 +105,7 @@ const Hero = () => {
                 <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30" style={{ aspectRatio: '16/9' }}>
                   <iframe
                     src="https://www.youtube.com/embed/3HCv5_QldrU?controls=1&rel=0&modestbranding=1&playsinline=1&autoplay=0&mute=0"
-                    title="Marriage Mender GPT Introduction"
+                    title="Marriage Mender GPT Introduction - AI Web Tools for Relationship Healing"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     className="absolute inset-0 w-full h-full"
@@ -129,8 +132,14 @@ const Hero = () => {
               </div>
               <p className="text-base text-white/80 backdrop-blur-sm bg-white/5 p-4 rounded-xl border border-white/10">
                 <span className="font-bold text-transparent bg-gradient-to-r from-white to-rustic-accent bg-clip-text text-xl">1,000+</span><br />
-                <span className="text-sm">couples already using Marriage Mender</span>
+                <span className="text-sm">couples already using our AI tools</span>
               </p>
+            </div>
+            
+            {/* SEO Keywords Section */}
+            <div className="hidden">
+              <h3>AI Web Tools for Relationship Success</h3>
+              <p>AIWEBTOOLS.AI provides cutting-edge artificial intelligence tools for couples therapy, marriage counseling, and relationship mediation. Our AI tools help resolve conflicts and improve communication.</p>
             </div>
           </div>
         </div>
@@ -143,4 +152,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
