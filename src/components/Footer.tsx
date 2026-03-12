@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-rustic-accent/0 to-rustic-accent/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </a>
               <a
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden text-white/80 hover:text-white transition-all duration-300 p-3 rounded-lg backdrop-blur-sm bg-white/5 border border-white/10 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-400/20"
