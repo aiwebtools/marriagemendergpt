@@ -94,7 +94,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black/95 backdrop-blur-lg z-40 pt-16 animate-fade-in">
+        <div className="md:hidden fixed inset-0 bg-black/95 backdrop-blur-lg z-40 pt-20 animate-fade-in" style={{ animation: 'fadeIn 0.15s ease-out forwards' }}>
           <div className="px-4 py-6 flex flex-col space-y-6">
             <a
               href="https://chatgpt.com/g/g-0MogI8wIQ-marriage-mender-gpt"
