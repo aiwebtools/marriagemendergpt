@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-rustic-accent/0 to-rustic-accent/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </a>
               <a
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden text-white/80 hover:text-white transition-all duration-300 p-3 rounded-lg backdrop-blur-sm bg-white/5 border border-white/10 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-400/20"
@@ -120,7 +120,7 @@ const Footer = () => {
 
         <div className="mt-16 border-t border-gradient-to-r from-transparent via-rustic-accent/30 to-transparent pt-8 flex flex-col md:flex-row justify-between items-center">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/70 hover:text-white transition-all duration-300 backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10 hover:border-rustic-accent/30 transform hover:scale-105"
@@ -129,7 +129,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative overflow-hidden px-8 py-4 rounded-full text-white hover:text-black flex items-center mt-6 md:mt-0 backdrop-blur-lg bg-gradient-to-r from-rustic-accent/20 to-yellow-400/20 border border-rustic-accent/50 hover:shadow-xl hover:shadow-rustic-accent/30 transform hover:scale-110 transition-all duration-300"
