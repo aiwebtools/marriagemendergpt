@@ -120,7 +120,7 @@ const Footer = () => {
 
         <div className="mt-16 border-t border-gradient-to-r from-transparent via-rustic-accent/30 to-transparent pt-8 flex flex-col md:flex-row justify-between items-center">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/70 hover:text-white transition-all duration-300 backdrop-blur-sm bg-white/5 p-3 rounded-lg border border-white/10 hover:border-rustic-accent/30 transform hover:scale-105"
